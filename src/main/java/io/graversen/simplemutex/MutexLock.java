@@ -28,14 +28,6 @@ public final class MutexLock
 
     }
 
-    public static void main(String[] args)
-    {
-        MutexLock.acquire();
-        MutexLock.release();
-        MutexLock.acquire();
-        MutexLock.acquire();
-    }
-
     public static void acquire()
     {
         synchronized (THREAD_SAFETY_MUTEX)
